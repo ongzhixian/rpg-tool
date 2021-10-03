@@ -1,7 +1,5 @@
 import { NgModule } from '@angular/core';
-// import { CommonModule } from '@angular/common';
-import { RouterModule, Routes } from '@angular/router';
-//import { HeroesComponent } from './heroes/heroes.component';
+import { Router, RouterModule, Routes } from '@angular/router';
 import { PlayerCharacterListComponent } from './player-character-list/player-character-list.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { PlayerCharacterComponent } from './player-character/player-character.component'
