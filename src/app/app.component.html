@@ -18,7 +18,7 @@
                     <a class="nav-link" routerLink="/dashboard">Dashboard</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" routerLink="/roll-dice">Roll dice</a>
+                    <a class="nav-link" routerLink="/dice-roll">Roll dice</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -88,13 +88,18 @@
             </div>
         </div>
         <div class="col-sm-8">
-                <nav>
-                    <a routerLink="/heroes">Heroes</a>
-                    &nbsp;&nbsp;&nbsp;&nbsp;
-                    <a routerLink="/dashboard">Dashboard</a>
-                </nav>
-                <router-outlet></router-outlet>
-                <app-message-list></app-message-list>
+            <!--
+            <nav>
+                <a routerLink="/heroes">Heroes</a>
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <a routerLink="/dashboard">Dashboard</a>
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <a routerLink="/dice-roll">X DICE</a>
+            </nav>
+            -->
+
+            <router-outlet></router-outlet>
+            <!-- <app-message-list></app-message-list> -->
         </div>
     </div>
 </div> 

@@ -1,5 +1,11 @@
 # Angular CLI
 
+## Install Angular CLI
+
+```
+npm install -g @angular/cli
+```
+
 ## Create new application
 
 ```

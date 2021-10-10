@@ -1,1 +1,65 @@
-<p>dice-roll works!</p>
+<h1 class="display-1">Dice roll</h1>
+
+<!-- 
+<div class="dropdown">
+    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+      Dropdown button
+    </button>
+    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+      <li><a class="dropdown-item" href="#">Action</a></li>
+      <li><a class="dropdown-item" href="#">Another action</a></li>
+      <li><a class="dropdown-item" href="#">Something else here</a></li>
+    </ul>
+</div> 
+
+<button type="button" class="btn btn-primary">Roll</button>
+
+<p>
+    helo wdice roll
+</p>
+-->
+
+<form class="row row-cols-lg-auto g-3 align-items-center">
+    <div class="col-12">
+      <label class="visually-hidden" for="inlineFormInputGroupUsername">Number of rolls</label>
+        <input type="text" class="form-control" placeholder="Number" [(ngModel)]="diceCount" name="diceCount">
+    </div>
+  
+    <div class="col-12">
+      <label class="visually-hidden" for="inlineFormSelectPref">Preference</label>
+      <select class="form-select" [(ngModel)]="selectedDiceType" name="selectedDiceType">
+        <option *ngFor="let diceType of diceTypes" 
+          (change)="onSelect(diceType)"
+          [ngValue]="diceType">
+          {{diceType.description}}
+        </option>
+      </select>
+    </div>
+  
+    <div class="col-12">
+        <!-- <button class="clear" (click)="messageService.clear()">Clear messages</button> -->
+        <button class="btn btn-primary" (click)="getResults()">Roll</button>
+    </div>
+</form>
+
+<div class="container" *ngIf="outcomeTotal > 0">
+  <div class="row">
+    
+    <div class="col-6">
+      <span class="display-2">{{outcomeTotal}}</span>
+    </div>
+  </div>
+</div>
+
+
+<!-- 
+<div >
+  <p>Result</p>
+  <h1 class="display-2">{{outcomeTotal}}</h1>
+</div> -->
+
+
+<!-- 
+<select class="form-select" >
+  <option *ngFor="let diceType of diceTypes" value="{{diceType.type}}">{{diceType.description}}</option>
+</select> -->
