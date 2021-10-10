@@ -9,6 +9,7 @@ import { PlayerCharacterListComponent } from './player-character-list/player-cha
 import { MessageListComponent } from './message-list/message-list.component';
 import { AppRoutingModule } from './app-routing.module';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { DiceRollComponent } from './dice-roll/dice-roll.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     DashboardComponent,
     MessageListComponent,
     PlayerCharacterComponent,
-    PlayerCharacterListComponent
+    PlayerCharacterListComponent,
+    DiceRollComponent
   ],
   imports: [
     AppRoutingModule,
